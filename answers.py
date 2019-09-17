@@ -1,10 +1,10 @@
 Questions
-Which student was born closest to the cohort's graduation date?
-Which student has the most siblings?
-How many students are only children?
-Which 3 students have lived in NYC the shortest amount of time?
-How many students are native New Yorkers?
-Do any two students have the same favorite food?
+1. Which student was born closest to the cohort's graduation date?
+2. Which student(s) has the most siblings?
+3. How many students are only children?
+4. Which 3 students have lived in NYC the shortest amount of time?
+5. How many students are native New Yorkers?
+6. Do any two students have the same favorite food?
 
 1. 
 c.execute('''select name from students''').fetchall()
@@ -46,12 +46,3 @@ HAVING count(favorite_food) > 1
 """).fetchall()
 [('pizza', 2), ('steak', 2)]
 
-
-7. 
-c.execute('''
-SELECT name,
-abs(julianday('2018-' || substr(birthdate,1,2) || '-' || substr(birthdate,4,2)) - julianday('2018-06-19'))
-FROM students
-ORDER BY 2
-LIMIT 1
-''').fetchall() 
