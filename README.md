@@ -15,10 +15,16 @@ This is a set of useful practice exercises for students to test their SQL knowle
 * Use where clauses appropriately with SQL
 * Understand the difference between where and having clauses
 * Perform group by aggregations with sql
+* Use the pd.read_sql() method to display the result of sql queries
 
 ## Prerequisite Knowledge
 
 Students should already have a done a fair amount of practice with SQL before trying these exercises, some of which are moderately complex.
+
+## Common Misconceptions
+
+Misconception: SQL Keywords must be capitalized.
+All SQL Keywords in this lesson have been capitalized for easy recognition. However, they need not be and would still functionally work if written in lower case.
 
 ## Agenda
 
@@ -55,3 +61,10 @@ This problem employs the `Having` clause.  Be sure to review the difference betw
 > Extension:
 
 Have students write their own problems (up to 3), and share them with a partner. These can also then be shared out with the larger class. Please add any exemplars to this document and push those additions to github. 
+
+
+## Next Steps:
+
+* Add notes regarding GUI interfaces such as MYSQL Workbench
+* Host DB on local server of AWS to give students practice with connecting to a remote db 
+
